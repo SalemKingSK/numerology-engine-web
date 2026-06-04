@@ -1,0 +1,36 @@
+{
+  "name": "Mystique Compass",
+  "short_name": "Mystique",
+  "description": "Discover your cosmic blueprint — Numerology, Astrology & Chinese Zodiac profile generator.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#060010",
+  "theme_color": "#d4af37",
+  "categories": ["lifestyle", "entertainment", "personalization"],
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Generate Profile",
+      "short_name": "Profile",
+      "description": "Generate your cosmic numerology profile",
+      "url": "/",
+      "icons": [{ "src": "/icon.svg", "sizes": "any" }]
+    }
+  ]
+}

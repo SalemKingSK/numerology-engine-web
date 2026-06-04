@@ -1,0 +1,27 @@
+kind = "mobile"
+previewPath = "/mystique-mobile/"
+title = "Mystique Mobile"
+version = "1.0.0"
+id = "artifacts/mystique-mobile"
+router = "expo-domain"
+
+[[integratedSkills]]
+name = "expo"
+version = "1.0.0"
+
+[[services]]
+ensurePreviewReachable = "/status"
+name = "expo"
+paths = [ "/mystique-mobile/" ]
+localPort = 25769
+
+[services.development]
+run = "pnpm --filter @workspace/mystique-mobile run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/mystique-mobile", "run", "build" ]
+run = [ "pnpm", "--filter", "@workspace/mystique-mobile", "run", "serve" ]
+
+[services.env]
+PORT = "25769"
+BASE_PATH = "/mystique-mobile/"
